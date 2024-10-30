@@ -1,0 +1,4 @@
+{"testCaseName":"Test Cases/API/TC01_Get_ListUsers","testCaseId":"Test Cases/API/TC01_Get_ListUsers","iterationVariableName":""}
+{"testCaseName":"Test Cases/API/TC02_Get_SingleUser","testCaseId":"Test Cases/API/TC02_Get_SingleUser","iterationVariableName":""}
+{"testCaseName":"Test Cases/API/TC03_PUT_UpdateUser","testCaseId":"Test Cases/API/TC03_PUT_UpdateUser","iterationVariableName":""}
+{"testCaseName":"Test Cases/API/TC04_POST_RegisterSuccessful","testCaseId":"Test Cases/API/TC04_POST_RegisterSuccessful","iterationVariableName":""}

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="APITestSuite" time="6.019" tests="4" failures="0" errors="0">
+   <testsuite name="APITestSuite" tests="4" failures="0" errors="0" time="6.019" skipped="0" timestamp="30-10-2024T21:49:12" hostname="User - ROG-AndreasBagasPermanaPutra" id="Test Suites/APITestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\User\\git\\Test1-APITest-QoinDigitalAssignmentTest\\Reports\\20241030_214905\\APITestSuite\\20241030_214905"/>
+         <property name="logFiles" value="C:\\Users\\User\\git\\Test1-APITest-QoinDigitalAssignmentTest\\Reports\\20241030_214905\\APITestSuite\\20241030_214905\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - ROG-AndreasBagasPermanaPutra"/>
+         <property name="hostAddress" value="192.168.10.141"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.7.2.223"/>
+      </properties>
+      <testcase name="Test Cases/API/TC01_Get_ListUsers" time="3.473" classname="Test Cases/API/TC01_Get_ListUsers" status="PASSED">
+         <system-out><![CDATA[30-10-2024T21:49:12 - [TEST_CASE][PASSED] - Test Cases/API/TC01_Get_ListUsers: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:12 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Starting test case: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:12 - [TEST_STEP][PASSED] - logInfo("Starting test case: " + testCaseContext.getTestCaseId()): Starting test case: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:12 - [MESSAGE][INFO] - Starting test case: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:12 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("UserAPI/Get_ListUsers", ["baseUrl":baseUrl])): Send request and verify the response successfully
+
+30-10-2024T21:49:14 - [MESSAGE][INFO] - HAR: C:\Users\User\git\Test1-APITest-QoinDigitalAssignmentTest\Reports\20241030_214905\APITestSuite\20241030_214905\requests\main\0.har
+
+30-10-2024T21:49:15 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - getStatusCode()).isIn(Arrays.asList(200, 201, 202)): null
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[1].first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "per_page", 6): Verify element property value successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total", 12): Verify element property value successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total_pages", 2): Verify element property value successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify response successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - All validation steps have been passed
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementsCount(response, "data.first_name", 6): Verify element count successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element count successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[1].first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Test case passed: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - result = testCaseContext.getTestCaseStatus(): null
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - if (result == "PASSED"): Test case passed: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - logInfo("Test case passed: " + testCaseContext.getTestCaseId()): Test case passed: Test Cases/API/TC01_Get_ListUsers
+
+30-10-2024T21:49:15 - [MESSAGE][INFO] - Test case passed: Test Cases/API/TC01_Get_ListUsers]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/API/TC02_Get_SingleUser" time="0.663" classname="Test Cases/API/TC02_Get_SingleUser" status="PASSED">
+         <system-out><![CDATA[30-10-2024T21:49:15 - [TEST_CASE][PASSED] - Test Cases/API/TC02_Get_SingleUser: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Starting test case: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:15 - [TEST_STEP][PASSED] - logInfo("Starting test case: " + testCaseContext.getTestCaseId()): Starting test case: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:15 - [MESSAGE][INFO] - Starting test case: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("UserAPI/Get_SingleUser", ["page":"1"])): Send request and verify the response successfully
+
+30-10-2024T21:49:16 - [MESSAGE][INFO] - HAR: C:\Users\User\git\Test1-APITest-QoinDigitalAssignmentTest\Reports\20241030_214905\APITestSuite\20241030_214905\requests\main\1.har
+
+30-10-2024T21:49:16 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - getStatusCode()).isIn(Arrays.asList(200, 201, 202)): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", 2): Verify element property value successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "janet.weaver@reqres.in"): Verify element property value successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify response successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - All validation steps have been passed
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", 2): Verify element property value successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - responseEmail = getElementPropertyValue(response, "data.email"): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - userEmail = responseEmail: null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - println(responseEmail): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(response.getResponseBodyContent()): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - println(jsonResponse): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Test case passed: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - result = testCaseContext.getTestCaseStatus(): null
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - if (result == "PASSED"): Test case passed: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - logInfo("Test case passed: " + testCaseContext.getTestCaseId()): Test case passed: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:16 - [MESSAGE][INFO] - Test case passed: Test Cases/API/TC02_Get_SingleUser]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/API/TC03_PUT_UpdateUser" time="0.597" classname="Test Cases/API/TC03_PUT_UpdateUser" status="PASSED">
+         <system-out><![CDATA[30-10-2024T21:49:16 - [TEST_CASE][PASSED] - Test Cases/API/TC03_PUT_UpdateUser: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Starting test case: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - logInfo("Starting test case: " + testCaseContext.getTestCaseId()): Starting test case: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:16 - [MESSAGE][INFO] - Starting test case: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:16 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("UserAPI/PUT_UpdateUser", ["baseUrl":baseUrl, "userName":userName, "userJob":userJob])): Send request successfully
+
+30-10-2024T21:49:17 - [MESSAGE][INFO] - HAR: C:\Users\User\git\Test1-APITest-QoinDigitalAssignmentTest\Reports\20241030_214905\APITestSuite\20241030_214905\requests\main\2.har
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Send request successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - println(result): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", userName): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", userJob): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Test case passed: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - result = testCaseContext.getTestCaseStatus(): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - if (result == "PASSED"): Test case passed: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - logInfo("Test case passed: " + testCaseContext.getTestCaseId()): Test case passed: Test Cases/API/TC03_PUT_UpdateUser
+
+30-10-2024T21:49:17 - [MESSAGE][INFO] - Test case passed: Test Cases/API/TC03_PUT_UpdateUser]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/API/TC04_POST_RegisterSuccessful" time="1.111" classname="Test Cases/API/TC04_POST_RegisterSuccessful" status="PASSED">
+         <system-out><![CDATA[30-10-2024T21:49:17 - [TEST_CASE][PASSED] - Test Cases/API/TC04_POST_RegisterSuccessful: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: Starting test case: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - logInfo("Starting test case: " + testCaseContext.getTestCaseId()): Starting test case: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:17 - [MESSAGE][INFO] - Starting test case: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("API/TC02_Get_SingleUser"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/API/TC02_Get_SingleUser' successfully
+
+30-10-2024T21:49:17 - [TEST_CASE][PASSED] - Test Cases/API/TC02_Get_SingleUser: Test Cases/API/TC02_Get_SingleUser
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("UserAPI/Get_SingleUser", ["page":"1"])): Send request and verify the response successfully
+
+30-10-2024T21:49:17 - [MESSAGE][INFO] - HAR: C:\Users\User\git\Test1-APITest-QoinDigitalAssignmentTest\Reports\20241030_214905\APITestSuite\20241030_214905\requests\main\3.har
+
+30-10-2024T21:49:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - getStatusCode()).isIn(Arrays.asList(200, 201, 202)): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", 2): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "janet.weaver@reqres.in"): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify response successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - All validation steps have been passed
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", 2): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - responseEmail = getElementPropertyValue(response, "data.email"): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - userEmail = responseEmail: null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - println(responseEmail): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(response.getResponseBodyContent()): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - println(jsonResponse): null
+
+30-10-2024T21:49:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/API/TC02_Get_SingleUser' successfully
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - println(userEmail): null
+
+30-10-2024T21:49:17 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("UserAPI/POST_RegisterSuccessful")): Send request and verify the response successfully
+
+30-10-2024T21:49:18 - [MESSAGE][INFO] - HAR: C:\Users\User\git\Test1-APITest-QoinDigitalAssignmentTest\Reports\20241030_214905\APITestSuite\20241030_214905\requests\main\4.har
+
+30-10-2024T21:49:18 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - getStatusCode()).isIn(Arrays.asList(200, 201, 202)): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", 2): Verify element property value successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "token", "QpwL5tke4Pnpja7X2"): Verify element property value successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify response successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - All validation steps have been passed
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+30-10-2024T21:49:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(response.getResponseBodyContent()): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - println(jsonResponse): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Test case passed: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - result = testCaseContext.getTestCaseStatus(): null
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - if (result == "PASSED"): Test case passed: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:18 - [TEST_STEP][PASSED] - logInfo("Test case passed: " + testCaseContext.getTestCaseId()): Test case passed: Test Cases/API/TC04_POST_RegisterSuccessful
+
+30-10-2024T21:49:18 - [MESSAGE][INFO] - Test case passed: Test Cases/API/TC04_POST_RegisterSuccessful]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[30-10-2024T21:49:12 - [TEST_SUITE][PASSED] - APITestSuite: Test Cases/API/TC04_POST_RegisterSuccessful]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

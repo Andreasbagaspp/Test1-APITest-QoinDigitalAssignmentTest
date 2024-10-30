@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+APITestSuite,,,,30-10-2024 21:49:12,30-10-2024 21:49:18,"6,019s",PASSED
+,,,,,,,
+Test Cases/API/TC01_Get_ListUsers,,,,30-10-2024 21:49:12,30-10-2024 21:49:15,"3,473s",PASSED
+Start listener action : beforeTestCase,,,,30-10-2024 21:49:12,30-10-2024 21:49:12,"0,044s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserAPI/Get_ListUsers"", [""baseUrl"":baseUrl]))",,,,30-10-2024 21:49:12,30-10-2024 21:49:15,"3,208s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,30-10-2024 21:49:15,30-10-2024 21:49:15,"0,007s",PASSED
+"verifyElementsCount(response, ""data.first_name"", 6)",,,,30-10-2024 21:49:15,30-10-2024 21:49:15,"0,036s",PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Janet"")",,,,30-10-2024 21:49:15,30-10-2024 21:49:15,"0,024s",PASSED
+Start listener action : afterTestCase,,,,30-10-2024 21:49:15,30-10-2024 21:49:15,"0,006s",PASSED
+,,,,,,,
+Test Cases/API/TC02_Get_SingleUser,,,,30-10-2024 21:49:15,30-10-2024 21:49:16,"0,663s",PASSED
+Start listener action : beforeTestCase,,,,30-10-2024 21:49:15,30-10-2024 21:49:15,"0,004s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserAPI/Get_SingleUser"", [""page"":""1""]))",,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,476s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,003s",PASSED
+"verifyElementPropertyValue(response, ""data.id"", 2)",,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,020s",PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Janet"")",,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,020s",PASSED
+"responseEmail = getElementPropertyValue(response, ""data.email"")",,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,030s",PASSED
+userEmail = responseEmail,,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,002s",PASSED
+println(responseEmail),,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,004s",PASSED
+jsonResponse = JsonSlurper().parseText(response.getResponseBodyContent()),,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,003s",PASSED
+println(jsonResponse),,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,000s",PASSED
+Start listener action : afterTestCase,,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,002s",PASSED
+,,,,,,,
+Test Cases/API/TC03_PUT_UpdateUser,,,,30-10-2024 21:49:16,30-10-2024 21:49:17,"0,597s",PASSED
+Start listener action : beforeTestCase,,,,30-10-2024 21:49:16,30-10-2024 21:49:16,"0,001s",PASSED
+"response = sendRequest(findTestObject(""UserAPI/PUT_UpdateUser"", [""baseUrl"":baseUrl, ""userName"":userName, ""userJob"":userJob]))",,,,30-10-2024 21:49:16,30-10-2024 21:49:17,"0,465s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,003s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,001s",PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,001s",PASSED
+println(result),,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,001s",PASSED
+"verifyElementPropertyValue(response, ""name"", userName)",,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,019s",PASSED
+"verifyElementPropertyValue(response, ""job"", userJob)",,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,017s",PASSED
+Start listener action : afterTestCase,,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,001s",PASSED
+,,,,,,,
+Test Cases/API/TC04_POST_RegisterSuccessful,,,,30-10-2024 21:49:17,30-10-2024 21:49:18,"1,111s",PASSED
+Start listener action : beforeTestCase,,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,001s",PASSED
+"callTestCase(findTestCase(""API/TC02_Get_SingleUser""), [:], STOP_ON_FAILURE)",,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,330s",PASSED
+println(userEmail),,,,30-10-2024 21:49:17,30-10-2024 21:49:17,"0,002s",PASSED
+"response = sendRequestAndVerify(findTestObject(""UserAPI/POST_RegisterSuccessful""))",,,,30-10-2024 21:49:17,30-10-2024 21:49:18,"0,697s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,30-10-2024 21:49:18,30-10-2024 21:49:18,"0,002s",PASSED
+jsonResponse = JsonSlurper().parseText(response.getResponseBodyContent()),,,,30-10-2024 21:49:18,30-10-2024 21:49:18,"0,001s",PASSED
+println(jsonResponse),,,,30-10-2024 21:49:18,30-10-2024 21:49:18,"0,000s",PASSED
+Start listener action : afterTestCase,,,,30-10-2024 21:49:18,30-10-2024 21:49:18,"0,001s",PASSED
